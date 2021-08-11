@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK ICONOS -->
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- LINK ESTILOS -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- LINK FUENTES -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Open+Sans:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- LIBRERIA ANIMACIONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/png">
+    
+    <title>Restaurante La Sirena</title>
+</head>
+
+<body>
+    <div class="barra">
+        <div class="barra1">
+            <div class="contenedor_barra1 contenedor">
+                <div class="horario">HORARIO: M-S 18:00-23:00</div>
+                <div class="telefono">
+                    <a href="tel:922714020" class="telefono"> Tel: +34 922 71 40 20</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="contenedor_navi">
+            <div class="contenedor">
+                <div class="enlaces">
+                    <a href="#nosotros">Nosotros</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#filosofia">Filosofía</a>
+                    <a href="reservas.html">Reservas</a>
+                    <a href="recetas.html">Recetas</a>
+                </div>
+               
+            </div>
+            <div class="hamburguesa">
+                <i class="fas fa-bars" id="hamburguesa" alt="Menú"></i>
+            </div>
+        </div>
+        <div class="centrar">
+            <h1 class="logo">Restaurante La Sirena</h1>
+            <br>
+            <h2 class="slogan">
+                Nueva Gestión
+                <br>
+                <a href="#nosotros" class="slogan">¡Conócenos!</a>
+            </h2>
+        </div>
+    </div>
+    <div class="nosotros contenedor_nosotros">
+        <div class="contenedor" id="nosotros">
+            <div class="equipo equipo1 centrar">
+                <div>
+                    <img src="imagenes/equipo1.jpg" alt="Raquel" class="imagen_equipo">
+                </div>
+                <p><span class="negrita">Puesto:</span> Socia-Cocinera</p>
+                <br>
+                <p>
+                    Es el alma de nuestra cocina, de sus recetas salen todos nuestros platos, amor y paciencia son sus
+                    ingredientes mágicos.
+                </p>
+            </div>
+            <div class="equipo equipo2 centrar">
+                <div>
+                    <img src="imagenes/equipo2.jpg" alt="Raquel" class="imagen_equipo">
+                </div>
+                <p><span class="negrita">Puesto:</span> Socia-Cocinera</p>
+                <br>
+                <p>
+                    Es el alma de nuestra cocina, de sus recetas salen todos nuestros platos, amor y paciencia son sus
+                    ingredientes mágicos.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="productos" class="productos">
+
+        <div class="productos_texto contenedor padding">
+            <h1 class="centrar padding">Productos KM0 <i class="fas fa-dolly"></i></h1>
+            <p>
+                Nuestra filosofía es trabajar con productos locales. Es por una cuestión ética con el medio ambiente y
+                una forma de contribuir al desarrollo local.
+
+                Muchas de las verduras estan cultivadas de manera ecológica, libre de pesticidas.
+
+                Los productos cárnicos y pescados son de ganadería de la isla, al igual que los quesos son de origen
+                canario.
+
+                El vino es de la Isla de Tenerife, los licores son hechos por nosotros mismos con frutas locales.
+
+                El café es de la isla de Gran Canaria y los postres son elaborados en nuestras cocinas.
+            </p>
+        </div>
+
+
+        <!-- SLIDER PRODUCTOS -->
+        <div class="contenedor_slider">
+            <div class="slider" id="slider">
+
+                <div class="seccion__slider">
+                    <img src="imagenes/slider1.jpg" alt="" class="imagen_slider">
+                    <p>ejemplo de descripcion</p>
+                </div>
+                <div class="seccion__slider">
+                    <img src="imagenes/slider2.jpg" alt="" class="imagen_slider">
+                </div>
+                <div class="seccion__slider">
+                    <img src="imagenes/slider3.jpg" alt="" class="imagen_slider">
+                </div>
+                <div class="seccion__slider">
+                    <img src="imagenes/slider4.jpg" alt="" class="imagen_slider">
+                </div>
+                <div class="seccion__slider">
+                    <img src="imagenes/slider5.jpg" alt="" class="imagen_slider">
+                </div>
+                <div class="seccion__slider">
+                    <img src="imagenes/slider6.jpg" alt="" class="imagen_slider">
+                </div>
+            </div>
+            <!-- BOTONES SLIDER -->
+            <div class="slider_btn slider_btn_left" id="btn-left"> &#60; </div>
+            <div class="slider_btn slider_btn_right" id="btn-rigth"> &#62; </div>
+        </div>
+        <!-- FIN SLIDER PRODUCTOS -->
+
+
+    </div>
+
+    <div class="filosofia" id="filosofia">
+        <div class="filosofia_texto contenedor padding">
+            <h1 class="centrar padding">Se Come Lo Que Hay</h1>
+            <p>
+                Nuestra filosofía es trabajar con productos locales. Es por una cuestión ética con el medio ambiente y
+                una forma de contribuir al desarrollo local.
+
+                Muchas de las verduras estan cultivadas de manera ecológica, libre de pesticidas.
+
+                Los productos cárnicos y pescados son de ganadería de la isla, al igual que los quesos son de origen
+                canario.
+
+                El vino es de la Isla de Tenerife, los licores son hechos por nosotros mismos con frutas locales.
+
+                El café es de la isla de Gran Canaria y los postres son elaborados en nuestras cocinas.
+            </p>
+        </div>
+    </div>
+
+    <footer class="contenedor_footer">
+        <div class="contenedor contenedor_pies">
+            <div class="pie1 centrar">
+                <h2>Nuestra Redes Sociales</h2>
+                <div class="pie1_1 contenedor">
+                    <div class="facebook">
+                        <a href="https://es-es.facebook.com/" target="blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <p>Facebook</p>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/?hl=es" target="blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="flickr">
+                        <a href="https://www.flickr.com/" target="blank">
+                            <i class="fab fa-flickr"></i>
+                        </a>
+                        <p>Flickr</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pie2 centrar">
+                <h2>Dirección:</h2>
+                <address>
+                    C/ Antonio Navarro, S/N. C.C. Atamanes. <br>
+                    Torviscas Bajo, Adeje. C.P. 38660 <br>
+                    Adeje, S/C de Tenerife
+                </address>
+            </div>
+
+            <div class="pie3 centrar">
+                <h2>Contacto:</h2>
+                <div>
+                    
+                        <a href="tel:922714020" class="contacto">922 71 40 20</a>
+                    
+                </div>
+                <div>
+                    
+                        <a href="mailto: restaurante@lasirena.com" class="contacto">Enviar em@il</a>
+                    
+                </div>
+            </div>
+
+            <div class="pie4 centrar">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.0892055297777!2d-16.734211684541133!3d28.0828217154968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc6a975a515bbe15%3A0x5e8301c406cb634!2sRestaurante%20la%20Sirena!5e0!3m2!1ses!2ses!4v1628522747821!5m2!1ses!2ses"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+
+        <div class="pie_copy centrar">
+            <em>&copy; Todos los derechos reservados por YerayDarias S.L</em>
+        </div>
+
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/slider_nosotros.js"></script>
+    <script src="js/myjs.js"></script>
+</body>
+
+</html>

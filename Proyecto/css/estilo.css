@@ -1,0 +1,392 @@
+:root {
+    --negro: #000;
+    --blanco: #f5f5f5;
+    --principal: rgb(163, 163, 163);
+    --secundario: rgb(25, 100, 126);
+    --amarillo: rgb(239, 202, 8);
+
+    --fuentePrincipal: 'Acme', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --fuenteAmano: 'Indie Flower', cursive;
+}
+
+
+
+/* CONFIGURACIONES GLOBALES */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--blanco);
+}
+
+p {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.4rem;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuentePrincipal);
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+h2,
+address {
+    font-size: 2rem;
+}
+
+.padding {
+    padding: 20px;
+}
+
+
+
+
+/* BARRA1 */
+
+.barra {
+    position: fixed;
+    width: 100%;
+}
+
+.barra1 {
+    background-color: var(--negro);
+    color: var(--amarillo);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor_barra1,
+.contenedor_navi {
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--fuenteAmano);
+    font-size: 1.5rem;
+    color: var(--amarillo);
+}
+
+.horario,
+.telefono {
+    margin-top: 1rem;
+    color: var(--amarillo);
+}
+
+.header {
+    position: relative;
+    top: 5rem;
+}
+
+
+
+/* NAVI */
+
+
+.enlaces a {
+    color: var(--amarillo);
+}
+
+
+
+.hamburguesa {
+    display: block;
+    margin-right: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.fa-bars {
+    font-size: 2rem;
+}
+
+.enlaces {
+    position: fixed;
+    background-color: var(--secundario);
+    left: 0;
+    top: 4rem;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.enlaces2 {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+/* HEADER */
+
+.header {
+    height: 60rem;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    background-attachment: fixed;
+
+}
+
+.logo {
+    font-size: 5rem;
+    color: var(--secundario);
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.slogan {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--amarillo);
+    font-family: var(--fuentePrincipal);
+    margin-top: 5rem;
+}
+
+/* NOSOTROS */
+
+.contenedor_nosotros {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    background-color: var(--amarillo);
+}
+
+.imagen_equipo {
+    width: 30rem;
+    border-radius: 15rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.equipo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+}
+
+
+/* PRODUCTOS */
+
+.productos {
+    background-color: var(--principal);
+}
+
+.productos_texto p {
+    text-align: justify;
+}
+
+.fa-dolly{
+    color: var(--amarillo);
+    font-size: 3rem;
+    margin-left: 1rem;
+}
+
+
+/*  PRODUCTOS (SLIDER) */
+
+.contenedor_slider {
+    width: 100%;
+    max-width: 120rem;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px var(--resaltado),
+        0 2px 50px var(--primario);
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    height: 40rem;
+    width: 600%;
+    margin-left: -100%;
+}
+
+.seccion__slider {
+    width: 100%;
+}
+
+.imagen_slider {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider_btn {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--resaltado);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+    color: var(--primario);
+}
+
+.slider_btn:hover {
+    background-color: var(--claro);
+}
+
+.slider_btn_left {
+    left: 1rem;
+}
+
+.slider_btn_right {
+    right: 1rem;
+}
+
+/* fin PRODUCTOS (SLIDER) */
+
+/* FILOSOFIA */
+
+.filosofia{
+    background-color: var(--blanco);
+    margin-bottom: 2rem;
+}
+
+.filosofia h1{
+    color: var(--amarillo);
+}
+
+/* FOOTER */
+
+.contenedor_footer {
+    width: 100%;
+    background-color: var(--principal);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fa-facebook-square,
+.fa-instagram-square,
+.fa-flickr {
+    font-size: 5rem;
+    color: var(--amarillo);
+    padding: 1rem;
+}
+
+.pie1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.pie1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+address {
+    margin-top: 1rem;
+}
+
+.contenedor_pies {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.pie_copy {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.pie3 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
+.contacto {
+    color: var(--amarillo);
+    font-size: 2rem;
+    font-weight: 1000;
+    font-family: var(--fuenteParrafos);
+}
+
+
+
+
+@media screen and (min-width:780px) {
+    .hamburguesa {
+        display: none;
+    }
+
+    .enlaces {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        background-color: transparent;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem;
+        transform: translateX(0%);
+        opacity: 1;
+        width: 100%;
+        position: static;
+        height: 3rem;
+    }
+
+}
